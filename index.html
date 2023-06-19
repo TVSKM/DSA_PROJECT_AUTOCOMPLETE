@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body {
+            background-image:url('https://wallpapers.com/images/featured/5q6xbfxwtbme5kaj.jpg');
+		background-size:cover;
+        }
+
+        header {
+            background-color: #343a40;
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .top {
+            margin-top: 20px;
+        }
+
+        #text-box {
+            border-radius: 0;
+        }
+
+        #list {
+            margin-top: 10px;
+        }
+    </style>
+    <title>Autocompletion</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="text-center">Autocompletion</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container top">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Type any word" id="text-box">
+            </div>
+            <ul id="list" class="list-group"></ul>
+        </div>
+    </main>
+
+    <script src="./trie.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
